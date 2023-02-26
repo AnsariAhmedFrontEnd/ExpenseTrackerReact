@@ -27,11 +27,12 @@ function App() {
   ];
 
   const expenseItem = expenses.map((expense) => {
-    <ExpenseItem>
+   return <ExpenseItem
       title={expense.title}
       amount={expense.amount}
       date={expense.date}
-    </ExpenseItem>
+      locationOfExpenditure={expense.locationOfExpenditure}
+    ></ExpenseItem>
   })
   return (
     <div>
