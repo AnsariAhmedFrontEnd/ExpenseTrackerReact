@@ -1,7 +1,7 @@
 import React from 'react';
 import './ExpenseItem.css';
 
-function ExpenseDeatails (props) {
+const ExpenseDeatails = (props) => {
     return (
         <div className='expense-item__description'>
         <h2>{props.title} - {props.locationOfExpenditure}</h2>
