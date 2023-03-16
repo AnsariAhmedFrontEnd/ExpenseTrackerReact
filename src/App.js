@@ -1,7 +1,7 @@
 import React from "react";
 import ExpenseItem from "./components/Expenses/ExpenseItem";
 import Card from './components/UI/Card';
-import NewExpense from "./components/Expenses/NewExpense/NewExpense";
+import NewExpense from './components/NewExpense/NewExpense'
 
 
 const App = () => {
