@@ -36,6 +36,7 @@ const App = () => {
     },
   ];
 
+
   const expenseItem = expenses.map((expense) => {
     return (
       <ExpenseItem
@@ -54,10 +55,14 @@ const App = () => {
   //    expenseItem
   // );
 
+  const addExpenseHandler = (expense) => {
+    console.log('in App.js');
+    console.log(expenses)
+  }
   
   return (
     <Card>
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseHandler} />
       {expenseItem}
     </Card>
   );
